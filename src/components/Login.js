@@ -59,7 +59,7 @@ const Login = () => {
                 name='password'
                 onChange={handleInput}
             />
-            <Button text='Login' callback={handleSubmit} />
+            <Button text='Log In' callback={handleSubmit} />
         </Wrapper>
     )
 }

@@ -18,6 +18,26 @@ export const Content = styled.div`
         color: var(--white);
         text-decoration: none;
     }
+
+    .login-status {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 20px;
+
+        * {
+            margin: 0 10px;
+        }
+
+        /* Shrinking Button dimensons to about 60% to look better in header */
+        button {
+            font-size: var(--fontSmall);
+            width: 15%;
+            min-width: 120px;
+            height: 36px;
+            border-radius: 18px;
+        }
+    }
 `;
 
 export const LogoImg = styled.img`

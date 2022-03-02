@@ -70,6 +70,10 @@ const apiSettings = {
     ).json();
 
     return rating;
+  },
+  getAccountStates: async (sessionId, movieId) => {
+    const endpoint = `${API_URL}movie/${movieId}/account_states?api_key=${API_KEY}&session_id=${sessionId}`;
+    return await (await fetch(endpoint)).json();
   }
 };
 
